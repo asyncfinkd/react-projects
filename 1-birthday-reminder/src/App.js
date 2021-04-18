@@ -3,14 +3,29 @@ import List from "./list/List";
 import Data from "./data/Data";
 
 export default function App() {
-  const [people, setPeople] = useState(Data);
+  const [birthdayPeople, setBirthdayPeople] = useState(Data);
+  const [cleared, setCleared] = useState(false);
+  const renderOnClick = () => {
+    if (cleared != true) {
+      setBirthdayPeople([]);
+      setCleared(true);
+    } else {
+      setBirthdayPeople(Data);
+      setCleared(false);
+    }
+  };
   return (
     <>
       <main>
         <section class="container">
-          <h3>0 birthdays today</h3>
-          <List />
-          <button onClick={() => console.log("clear all")}>Clear All</button>
+          <h3>{birthdayPeople.length} birthdays today</h3>
+          {birthdayPeople.length < 1 && (
+            <p class="message">I don't have users to show you</p>
+          )}
+          <List birthdayData={birthdayPeople} />
+          <button onClick={() => renderOnClick()}>
+            {cleared != true ? "Clear All" : "Show me users"}
+          </button>
         </section>
       </main>
     </>
