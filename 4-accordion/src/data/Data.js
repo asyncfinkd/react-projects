@@ -1,4 +1,4 @@
-export default [
+const questions = [
   {
     id: 1,
     question: "Who is Facebook CEO?",
@@ -15,3 +15,5 @@ export default [
     answer: "Bill Gates is microsoft CO-CEO",
   },
 ];
+
+export default questions;
