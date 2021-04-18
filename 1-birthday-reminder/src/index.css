@@ -38,3 +38,21 @@ main {
   border-radius: 5px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
+
+button {
+  width: 100%;
+  max-width: 100%;
+  cursor: pointer;
+  background-color: #3b5998;
+  border: none;
+  outline: none;
+  padding: 1rem 2rem;
+  color: white;
+  margin-top: 20px;
+  transition: all 0.2s ease;
+  border-radius: 5px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
