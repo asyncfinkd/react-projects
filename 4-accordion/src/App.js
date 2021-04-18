@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import data from "./data/data";
+import data from "./data/Data";
+import SingleQuestion from "./singleQuestion/SingleQuestion";
 
 export default function App() {
   const [questions, setQuestions] = useState(data);
@@ -8,6 +9,15 @@ export default function App() {
       <main>
         <div className="container">
           <h3>questions and answers About Login</h3>
+          <section className="info">
+            {questions.map((item) => {
+              return (
+                <>
+                  <SingleQuestion key={item.id} {...item} />
+                </>
+              );
+            })}
+          </section>
         </div>
       </main>
     </>
