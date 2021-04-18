@@ -8,11 +8,12 @@ export default function Review() {
 
   const checkNumber = (number) => {
     if (number > people.length - 1) {
-      const zero = 0;
+      let zero = 0;
       return zero;
     }
     if (number < 0) {
-      return people.length - 1;
+      let peopleMinus = people.length - 1;
+      return peopleMinus;
     }
     return number;
   };
