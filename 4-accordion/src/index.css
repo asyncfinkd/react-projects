@@ -61,7 +61,7 @@ h1,
 h2,
 h3,
 h4 {
-  letter-spacing: var(--spacing);
+  letter-spacing: 0.015rem;
   text-transform: capitalize;
   line-height: 1.25;
   margin-bottom: 0.75rem;
