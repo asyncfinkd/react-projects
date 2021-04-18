@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import List from "./list/List";
+import Data from "./data/Data";
 
 export default function App() {
+  const [people, setPeople] = useState(Data);
   return (
     <>
       <main>

@@ -1,4 +1,4 @@
-export const Birthday = [
+export default [
   {
     id: "0",
     username: "Bill Gates",
