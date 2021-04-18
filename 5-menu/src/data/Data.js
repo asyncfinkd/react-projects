@@ -19,6 +19,16 @@ const menu = [
     desc:
       "Click on any of the prices to see the best deals from the corresponding store. We may get a commission from qualifying sales.",
   },
+  {
+    id: 3,
+    title: "MacBook Pro 16",
+    category: "laptop",
+    price: "9999.99",
+    img:
+      "https://www.apple.com/v/mac/home/bc/images/overview/compare/macbook_pro_16__x90efpvdutu6_large.jpg",
+    desc:
+      "From $2399 or $199.91/mo. for 12 mo.** 16” Retina display1 Intel Core i7 or i9 processor Up to 64GB memory Up to 8TB storage2 Up to 11 hours battery life6",
+  },
 ];
 
 export default menu;
