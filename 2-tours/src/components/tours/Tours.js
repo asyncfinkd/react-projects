@@ -1,7 +1,7 @@
 import React from "react";
 import Tour from "../tourComponent/TourComponent";
 
-export default function Tours({ tours }) {
+export default function Tours({ tours, removeTour }) {
   return (
     <>
       <section>
@@ -13,7 +13,7 @@ export default function Tours({ tours }) {
           {tours.map((item) => {
             return (
               <>
-                <Tour key={item.id} {...item}></Tour>
+                <Tour key={item.id} {...item} removeTour={removeTour}></Tour>
               </>
             );
           })}
