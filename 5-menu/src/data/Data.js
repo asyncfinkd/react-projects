@@ -5,7 +5,7 @@ const menu = [
     category: "phone",
     price: "4999.99",
     img:
-      "https://cdn.tmobile.com/content/dam/t-mobile/en-p/cell-phones/apple/Apple-iPhone-12-Pro/Pacific-Blue/Apple-iPhone-12-Pro-Pacific-Blue-frontimage.png",
+      "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-12-family-select-2020?wid=940&amp;hei=1112&amp;fmt=jpeg&amp;qlt=80&amp;.v=1604343709000",
     desc:
       "The iPhone 12 and iPhone 12 mini are Apple's mainstream flagship iPhones for 2020. The phones come in 6.1-inch and 5.4-inch sizes with identical features",
   },
