@@ -38,18 +38,25 @@ export default function App() {
     );
   }
 
+  if (tours.length < 1) {
+    return (
+      <>
+        <main>
+          <div className="title">
+            <h2 style={{ textAlign: "center" }}>no tours left</h2>
+            <button onClick={fetchTours} className="btn">
+              Refresh
+            </button>
+          </div>
+        </main>
+      </>
+    );
+  }
+
   return (
     <>
       <main>
         <Tours tours={tours} removeTour={removeTour} />
-        {tours.length < 1 && (
-          <>
-            <div className="title">
-              <h2 style={{ textAlign: "center" }}>no tours left</h2>
-              <button onClick={fetchTours}>Refresh</button>
-            </div>
-          </>
-        )}
       </main>
     </>
   );
