@@ -135,3 +135,96 @@
   opacity: 1;
   pointer-events: visible;
 }
+
+
+.modal-container {
+  background-color: rgba(0,0,0,0.5);
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 5;
+  top: 0;
+  left: 0;
+}
+
+.modal-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 800px;
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+  height: 500px;
+  border-radius: 2px;
+  max-width: 100%;
+}
+
+.modal-icon {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+.modal-icon svg {
+  cursor: pointer;
+}
+
+.modal-image-header img {
+  width: 250px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.modal-flex {
+  display: flex;
+}
+
+.modal-right {
+  font-family: "BPG Arial Caps", sans-serif;
+  margin-left: 25px;
+  margin-top: 15px;
+  width: 480px;
+}
+
+.modal-right h2 {
+  font-size: 17px;
+  user-select: none;
+}
+
+.margin-t3 {
+  margin-top: 1rem;
+}
+
+.font-md {
+  font-size: 14px;
+  user-select: none;
+}
+
+.modal-title {
+  margin-top: 15px;
+  color: #666;
+  user-select: none;
+  font-size: 14px;
+}
+
+.modal-author {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  user-select: none;
+}
+
+.lighter {
+  font-weight: lighter;
+}
+
+.modal-author span {
+  margin-right: 5px;
+  color: #666;
+  font-size: 14px;
+}
+
+.modal-author p {
+  font-size: 14px;
+}

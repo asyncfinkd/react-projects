@@ -9,7 +9,9 @@ export default function App() {
         <h1 className="news-text">ახალი ამბები</h1>
       </div>
       <div className="info-container">
-        <AppQuery data={data} />
+        {data.map((item) => {
+          return <AppQuery key={item.id} {...item} />
+        })}
       </div>
     </>
   );
