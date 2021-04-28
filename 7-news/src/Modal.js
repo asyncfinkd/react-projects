@@ -21,7 +21,7 @@ export default function Modal({closeModal, image, title, category, time, modalTi
           <div className="modal-author">
           <span>ავტორი:</span> <p>{author}</p>
           </div>
-          <div className="modal-title">
+          <div id="modal" className="modal-title">
             <p>{modalTitle}</p>
           </div>
         </div>

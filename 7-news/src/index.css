@@ -185,6 +185,7 @@
   margin-left: 25px;
   margin-top: 15px;
   width: 480px;
+  max-width: 100%;
 }
 
 .modal-right h2 {
@@ -205,7 +206,29 @@
   margin-top: 15px;
   color: #666;
   user-select: none;
+  height: 350px;
   font-size: 14px;
+  overflow-y: scroll;
+}
+
+#modal::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+#modal::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+#modal::-webkit-scrollbar-thumb {
+  background: #3E4042;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+#modal::-webkit-scrollbar-thumb:hover {
+  background: #3E4545;
 }
 
 .modal-author {
@@ -227,4 +250,29 @@
 
 .modal-author p {
   font-size: 14px;
+}
+
+@media (max-width: 835px) {
+  .modal-flex {
+    flex-direction: column;
+  }
+  .modal-right {
+    margin-left: 10px;
+  }
+  .modal-title {
+    height: 200px;
+  }
+  .modal-content {
+    width: 500px;
+    height: 90vh;
+  }
+  .modal-image-header img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .modal-right {
+    padding-right: 15px;
+  }
 }
