@@ -17,7 +17,7 @@ export default function App() {
   return (
     <>
       <main>
-        <section class="container">
+        <section className="container">
           <h3>{birthdayPeople.length} birthdays today</h3>
           {birthdayPeople.length < 1 && (
             <p class="message">I don't have users to show you</p>

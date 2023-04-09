@@ -6,7 +6,6 @@ export default function List({ birthdayData }) {
       {birthdayData.map((item) => {
         const { id, username, age, image } = item;
         return (
-          <>
             <div className="person" key={id}>
               <img src={image} alt={username} />
               <div>
@@ -14,7 +13,6 @@ export default function List({ birthdayData }) {
                 <p>{age} years</p>
               </div>
             </div>
-          </>
         );
       })}
     </>
